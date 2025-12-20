@@ -24,6 +24,7 @@ class Authentication {
             for (User userEntry : userArray) {
                 if (userEntry.getUserName().equals(userScan)) {
                     if (userEntry.getPassword().equals(password)) {
+                        System.out.println("Matching");
                         // als er een match is
                         return userEntry;
                     }
